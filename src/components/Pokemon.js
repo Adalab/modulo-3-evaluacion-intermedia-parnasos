@@ -1,11 +1,11 @@
 import React from "react";
-//import "../stylesheets/App.css";
+import "../stylesheets/Pokemon.scss";
 
 const Pokemon = (props) => {
   const types = props.pok.types.map((type, index) => {
     console.log(type);
     return (
-      <li key={index} className="types">
+      <li className="pokemon__caract" key={index}>
         {type}
       </li>
     );
@@ -18,7 +18,7 @@ const Pokemon = (props) => {
         alt={props.pok.name}
       ></img>
       <h1 className="pokemon__title">{props.pok.name}</h1>
-      <ul className="pokemon__caract">{types}</ul>
+      <ul className="pokemon__Clist">{types}</ul>
     </article>
   );
 };
