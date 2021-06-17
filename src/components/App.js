@@ -6,7 +6,6 @@ import "../stylesheets/App.scss";
 
 const App = () => {
   const [items] = useState(Data);
-  console.log(items);
 
   return (
     <div className="content">
